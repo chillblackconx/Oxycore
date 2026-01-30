@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxyCore | Dev Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; }
+        .code-font { font-family: 'JetBrains Mono', monospace; }
+        .gradient-text {
+            background: linear-gradient(90deg, #00f2ff, #0066ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">OXY<span class="gradient-text">CORE</span></div>
+        <div class="hidden md:flex space-x-8 code-font text-sm uppercase tracking-widest">
+            <a href="#services" class="hover:text-cyan-400 transition">Services</a>
+            <a href="#stack" class="hover:text-cyan-400 transition">Stack</a>
+            <a href="#contact" class="hover:text-cyan-400 transition border border-cyan-400/50 px-4 py-1 rounded">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <div class="absolute w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] -top-20 -left-20"></div>
+        <div class="absolute w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] bottom-0 right-0"></div>
+        
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">
+            Build your <br><span class="gradient-text italic">Digital Core.</span>
+        </h1>
+        <p class="max-w-2xl text-gray-400 text-lg md:text-xl mb-10 code-font">
+            // Studio de développement haute performance. <br>
+            Nous transformons vos idées en architectures scalables.
+        </p>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+            <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-full transition transform hover:scale-105">
+                Démarrer un projet
+            </a>
+            <a href="#services" class="border border-white/20 hover:border-white/50 px-8 py-4 rounded-full transition">
+                Nos expertises
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-16 border-l-4 border-cyan-500 pl-4">SERVICES</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                <div class="text-cyan-400 text-4xl mb-4">01</div>
+                <h3 class="text-xl font-bold mb-2">Web & Mobile</h3>
+                <p class="text-gray-400 text-sm">Applications React, Next.js et mobiles natives conçues pour la vitesse.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                <div class="text-cyan-400 text-4xl mb-4">02</div>
+                <h3 class="text-xl font-bold mb-2">Backend & Cloud</h3>
+                <p class="text-gray-400 text-sm">Architectures micro-services et déploiement serverless ultra-optimisé.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+                <div class="text-cyan-400 text-4xl mb-4">03</div>
+                <h3 class="text-xl font-bold mb-2">Audit & Scale</h3>
+                <p class="text-gray-400 text-sm">Analyse de performance et refonte de code pour supporter la montée en charge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="py-24 border-t border-white/10 bg-black/50">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold mb-8 italic">Prêt à coder le futur ?</h2>
+            <p class="text-gray-500 mb-12 code-font">email comming</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition">Github</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">X (Twitter)</a>
+            </div>
+            <p class="mt-12 text-xs text-gray-600 tracking-widest">© 2026 OXYCORE STUDIO. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
